@@ -1,0 +1,25 @@
+{% load i18n %}
+{% url crdj_cms_taggit_update_tags request.current_page.pk as url_update_tags %}
+<div id="cms_toolbar-item_taggit" class="cms_toolbar-item cms_toolbar-item_page">
+{% if request.current_page %}
+{% if url_update_tags %}
+<form action="{{ url_update_tags }}" method="post">
+	<fieldset>
+		{% csrf_token %}
+		<table>
+		  <tr><td>
+		<input type="text" name="tags" value="{{ taggit.edit_string }}" /></td><td>
+		<a href="#" class="cms_toolbar-btn cms_toolbar-btn_left">
+			<span class="cms_toolbar-btn_right">
+				<span class="cms_toolbar_icon cms_toolbar_icon-prefix">&nbsp;</span>
+				<span class="cms_toolbar_title">{% trans "Update tags" %}</span>
+			</span>
+		</a>
+		</td>
+	</fieldset>
+</form>
+{% else %}
+ <table><tr><th>Tags:</th><td>&nbsp;{{ taggit.edit_string }}</td></tr></table>
+{% endif %}
+{% endif %}
+</div>

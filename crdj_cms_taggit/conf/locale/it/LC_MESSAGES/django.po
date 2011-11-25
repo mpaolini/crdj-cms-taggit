@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-24 12:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: models.py:11
+msgid "Page"
+msgstr "Pagina"
+
+#: models.py:13
+msgid "Description meta tag"
+msgstr "Descrizione tag meta"
+
+#: models.py:15
+msgid "A description of the page sometimes used by search engines."
+msgstr "Descrizione della pagina a volte usata dai motori di ricerca."
+
+#: models.py:16
+msgid "Tags"
+msgstr "Tags"
+
+#: models.py:17
+msgid "A comma-separated list of tags."
+msgstr "Lista di tag separati da virgola."
+
+#: models.py:20
+msgid "Page Taggit"
+msgstr "Taggit Pagina"
+
+#: models.py:21
+msgid "Page Taggits"
+msgstr "Taggit Pagine"
