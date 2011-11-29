@@ -8,3 +8,4 @@ def taggit(request):
                     {'tags': tags,
                      'edit_string': edit_string_for_tags(tags)}
                 }
+    return {}
