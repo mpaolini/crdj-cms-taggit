@@ -6,16 +6,15 @@
 <form action="{{ url_update_tags }}" method="post">
 	<fieldset>
 		{% csrf_token %}
-		<table>
-		  <tr><td>
-		<input type="text" name="tags" value="{{ taggit.edit_string }}" /></td><td>
-		<a href="#" class="cms_toolbar-btn cms_toolbar-btn_left">
+		<table><tr>
+		<td><input  class="cms_toolbar-btn_left" type="text" name="tags" value="{{ taggit.edit_string }}" /></td>
+		<td><a href="#" class="cms_toolbar-btn cms_toolbar-btn_left">
 			<span class="cms_toolbar-btn_right">
 				<span class="cms_toolbar_icon cms_toolbar_icon-prefix">&nbsp;</span>
 				<span class="cms_toolbar_title">{% trans "Update tags" %}</span>
 			</span>
-		</a>
-		</td>
+		</a></td>
+		</tr></table>
 	</fieldset>
 </form>
 {% else %}

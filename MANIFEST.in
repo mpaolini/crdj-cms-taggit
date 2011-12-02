@@ -1,3 +1,2 @@
 include *.txt *.rst
 recursive-include crdj_cms_taggit/templates *
-recursive-include crdj_cms_taggit/conf/locale *.mo *.po
